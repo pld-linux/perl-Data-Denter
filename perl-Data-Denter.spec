@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Data
 %define	pnam	Denter
-Summary:	Data::Denter - An (deprecated) alternative to Data::Dumper and Storable
+Summary:	Data::Denter - an (deprecated) alternative to Data::Dumper and Storable
 Summary(pl):	Data::Denter - (porzucona) alternatywa dla Data::Dumper i Storable
 Name:		perl-Data-Denter
 Version:	0.15
@@ -40,7 +40,7 @@ zrzuconych danych. Jest to wspania³e, je¶li mo¿na zaufaæ danym, ale
 przera¿aj±ce, je¶li nie mo¿emy. Dobr± alternatyw± jest modu³
 Storable.pm. Mo¿e on bezpiecznie roztopiæ zamro¿one dane. Ale kiedy
 chcemy odczytaæ/zmodyfikowaæ zamro¿one dane, nie mamy szczê¶cia,
-poniewa¿ Storable u¿ywa binarnego formatu. Nawet wyj¶cie modu³u
+poniewa¿ Storable u¿ywa binarnego formatu. Nawet format wyj¶cia modu³u
 Data::Dumper mo¿e by nieco niewygodny dla wiêkszych obiektów danych.
 
 %prep
