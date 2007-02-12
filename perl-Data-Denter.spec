@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Denter
 Summary:	Data::Denter - an (deprecated) alternative to Data::Dumper and Storable
-Summary(pl):	Data::Denter - (porzucona) alternatywa dla Data::Dumper i Storable
+Summary(pl.UTF-8):   Data::Denter - (porzucona) alternatywa dla Data::Dumper i Storable
 Name:		perl-Data-Denter
 Version:	0.15
 Release:	1
@@ -35,15 +35,15 @@ data, you're out of luck, because Storable uses a binary format. Even
 Data::Dumper's output can be a little cumbersome for larger data
 objects.
 
-%description -l pl
-G³ównym problemem klasy Data::Dumper (jednego z ulubionych modu³ów
-autora) jest to, ¿e trzeba u¿ywaæ eval() aby dokonaæ deserializacji
-zrzuconych danych. Jest to wspania³e, je¶li mo¿na zaufaæ danym, ale
-przera¿aj±ce, je¶li nie mo¿emy. Dobr± alternatyw± jest modu³
-Storable.pm. Mo¿e on bezpiecznie roztopiæ zamro¿one dane. Ale kiedy
-chcemy odczytaæ/zmodyfikowaæ zamro¿one dane, nie mamy szczê¶cia,
-poniewa¿ Storable u¿ywa binarnego formatu. Nawet format wyj¶cia modu³u
-Data::Dumper mo¿e by nieco niewygodny dla wiêkszych obiektów danych.
+%description -l pl.UTF-8
+GÅ‚Ã³wnym problemem klasy Data::Dumper (jednego z ulubionych moduÅ‚Ã³w
+autora) jest to, Å¼e trzeba uÅ¼ywaÄ‡ eval() aby dokonaÄ‡ deserializacji
+zrzuconych danych. Jest to wspaniaÅ‚e, jeÅ›li moÅ¼na zaufaÄ‡ danym, ale
+przeraÅ¼ajÄ…ce, jeÅ›li nie moÅ¼emy. DobrÄ… alternatywÄ… jest moduÅ‚
+Storable.pm. MoÅ¼e on bezpiecznie roztopiÄ‡ zamroÅ¼one dane. Ale kiedy
+chcemy odczytaÄ‡/zmodyfikowaÄ‡ zamroÅ¼one dane, nie mamy szczÄ™Å›cia,
+poniewaÅ¼ Storable uÅ¼ywa binarnego formatu. Nawet format wyjÅ›cia moduÅ‚u
+Data::Dumper moÅ¼e by nieco niewygodny dla wiÄ™kszych obiektÃ³w danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
