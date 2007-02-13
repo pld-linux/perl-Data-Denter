@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	Denter
 Summary:	Data::Denter - an (deprecated) alternative to Data::Dumper and Storable
-Summary(pl.UTF-8):   Data::Denter - (porzucona) alternatywa dla Data::Dumper i Storable
+Summary(pl.UTF-8):	Data::Denter - (porzucona) alternatywa dla Data::Dumper i Storable
 Name:		perl-Data-Denter
 Version:	0.15
 Release:	1
