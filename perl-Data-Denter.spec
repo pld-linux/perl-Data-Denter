@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Data
 %define		pnam	Denter
+%include	/usr/lib/rpm/macros.perl
 Summary:	Data::Denter - an (deprecated) alternative to Data::Dumper and Storable
 Summary(pl.UTF-8):	Data::Denter - (porzucona) alternatywa dla Data::Dumper i Storable
 Name:		perl-Data-Denter
@@ -15,12 +15,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	819e5c05fb61e90f4c1311286b080405
+URL:		http://search.cpan.org/dist/Data-Denter/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 # for perldiag.pod; should it be moved to perl-base?
-BuildRequires:	perl-perldoc
 BuildRequires:	perl-YAML
+BuildRequires:	perl-perldoc
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
